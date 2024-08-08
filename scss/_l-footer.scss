@@ -1,2 +1,150 @@
 .footer {
+  padding: 80px 0 50px;
+  background-color: $black;
+
+  @include tablet {
+    padding: 60px 0 37px;
+  }
+
+  & .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 40px;
+
+    @include tablet {
+      flex-direction: column;
+    }
+  }
+
+  &__social {
+    flex: 0 1 394px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    @include tablet {
+      flex: 0 1 auto;
+    }
+
+    &-links {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    &-link {
+      display: inline-block;
+      width: 38px;
+      height: 38px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 38px;
+      transition: opacity ease-in-out 0.2s;
+
+      &:hover {
+        opacity: 0.7;
+      }
+
+      &:active {
+        opacity: 0.5;
+      }
+
+      &_inst {
+        background-image: url(../assets/instagram.svg);
+      }
+
+      &_fb {
+        background-image: url(../assets/facebook.svg);
+      }
+
+      &_pin {
+        background-image: url(../assets/pinterest.svg);
+      }
+
+      &_x {
+        background-image: url(../assets/x.svg);
+      }
+
+      &_ytb {
+        background-image: url(../assets/youtube.svg);
+      }
+    }
+
+    &-text {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 110%;
+      color: $white;
+    }
+  }
+
+  &__subscribtion {
+    flex: 0 1 528px;
+
+    @include tablet {
+      flex: 0 1 auto;
+    }
+
+    &-form {
+      display: flex;
+      align-items: flex-end;
+      gap: 11px;
+      margin: 0 0 20px;
+
+      @include mobile {
+        flex-wrap: wrap;
+      }
+
+      &-label {
+        display: flex;
+        flex-direction: column;
+        flex: 1 1 auto;
+
+        &-text {
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 137%;
+          color: $white;
+        }
+      }
+
+      &-input {
+        display: inline-block;
+        padding: 11px 12px 10px;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 22px;
+        color: $white;
+        border: none;
+        border-bottom: 1px solid $white;
+        background-color: rgba($color: $black, $alpha: 0);
+        outline: none;
+      }
+
+      &-button {
+        padding: 10px 23px 10px;
+        box-sizing: border-box;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 22px;
+        color: $white;
+        border: 1px solid $white;
+        border-radius: 4px;
+        background-color: $black;
+      }
+    }
+
+    &-text {
+      padding-right: 132px;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 114%;
+      color: #6c6c6c;
+
+      @include tablet {
+        padding-right: 0;
+      }
+    }
+  }
 }
