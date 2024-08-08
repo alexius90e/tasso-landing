@@ -1,0 +1,92 @@
+.how-it-works {
+  padding: 30px 0 0;
+
+  &__title {
+    margin: 0 0 30px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 0 0 30px;
+    padding: 0;
+    list-style: none;
+
+    &-item {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+
+      &-title {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 112%;
+        color: #1a1a1a;
+      }
+
+      &-list {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        &-item {
+          display: flex;
+          align-items: center;
+          gap: 14px;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 112%;
+          text-align: justify;
+          color: #1a1a1a;
+
+          &::before {
+            content: '';
+            display: inline-block;
+            height: 8px;
+            width: 8px;
+            border-radius: 8px;
+            background-color: $black;
+          }
+        }
+      }
+    }
+  }
+
+  &__order {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px 30px;
+
+    @include tablet {
+      flex-direction: column;
+    }
+
+    &-price {
+      display: flex;
+      align-items: baseline;
+      gap: 9px;
+      line-height: 120%;
+      text-align: justify;
+      color: $green;
+
+      @include tablet {
+        text-align: left;
+      }
+
+      &-value {
+        font-weight: 600;
+        font-size: 30px;
+      }
+
+      &-currency {
+        font-weight: 400;
+        font-size: 14px;
+      }
+    }
+  }
+}

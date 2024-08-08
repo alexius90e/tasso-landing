@@ -16,6 +16,12 @@
   }
 
   &:active {
-    transform: scale(0.96);
+    transform: scale(0.98);
+    opacity: 0.9;
+  }
+
+  &_lg {
+    font-size: 20px;
+    padding: 14px 85px 16px;
   }
 }
