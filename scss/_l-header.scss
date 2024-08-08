@@ -1,2 +1,52 @@
 .header {
+  padding: 28px 0 14px;
+
+  @include tablet {
+    padding: 19px 0 20px;
+  }
+
+  & .container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 10px;
+      right: 10px;
+      bottom: -14px;
+      height: 2px;
+      background-color: #cacaca;
+
+      @include tablet {
+        bottom: -20px;
+      }
+    }
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: fit-content;
+
+    &-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &-image {
+      display: block;
+      max-width: 100%;
+      height: auto;
+
+      @include tablet {
+        width: 70px;
+      }
+    }
+  }
 }

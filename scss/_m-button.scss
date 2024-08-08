@@ -1,0 +1,21 @@
+.button {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 100%;
+  padding: 9px 29px 11px;
+  text-align: justify;
+  color: $white;
+  border: none;
+  border-radius: 4px;
+  background-color: $black;
+  transition: all ease-in-out 0.1s;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $green;
+  }
+
+  &:active {
+    transform: scale(0.96);
+  }
+}
