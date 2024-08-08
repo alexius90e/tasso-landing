@@ -19,7 +19,7 @@
       right: 10px;
       bottom: -14px;
       height: 2px;
-      background-color: #cacaca;
+      background-color: $grey;
 
       @include tablet {
         bottom: -20px;

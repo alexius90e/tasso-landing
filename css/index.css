@@ -46,6 +46,23 @@ img {
   height: auto;
 }
 
+.h2 {
+  max-width: 434px;
+  padding-left: 40px;
+  margin: 0;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 100%;
+  text-align: justify;
+  color: #146464;
+  background: url(../assets/leaf.svg) left top 6px no-repeat;
+}
+@media (max-width: 768px) {
+  .h2 {
+    padding-left: 34px;
+  }
+}
+
 .container {
   max-width: 1220px;
   width: 100%;
@@ -126,6 +143,15 @@ img {
   }
 }
 
+.first-screen {
+  padding: 70px 0 100px;
+}
+@media (max-width: 768px) {
+  .first-screen {
+    padding: 13px 0 60px;
+  }
+}
+
 .faq {
   padding: 80px 0;
   background: url(../assets/faq-bg.svg) top center repeat;
@@ -135,4 +161,26 @@ img {
   .faq {
     padding: 40px 0;
   }
+}
+
+.discover-path {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding-bottom: 30px;
+  border-bottom: 2px solid #cacaca;
+}
+.discover-path__title {
+  color: #1a1a1a;
+}
+.discover-path__text {
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 112%;
+  text-align: justify;
+  color: #1a1a1a;
+}
+.discover-path__text > b {
+  font-weight: 700;
 }

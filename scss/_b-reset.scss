@@ -48,3 +48,19 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+.h2 {
+  max-width: 434px;
+  padding-left: 40px;
+  margin: 0;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 100%;
+  text-align: justify;
+  color: $green;
+  background: url(../assets/leaf.svg) left top 6px no-repeat;
+
+  @include tablet {
+    padding-left: 34px;
+  }
+}

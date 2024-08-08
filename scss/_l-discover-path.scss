@@ -1,0 +1,24 @@
+.discover-path {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding-bottom:  30px;
+  border-bottom: 2px solid $grey;
+
+  &__title {
+    color: $black;
+  }
+
+  &__text {
+    margin: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 112%;
+    text-align: justify;
+    color: #1a1a1a;
+
+    & > b {
+      font-weight: 700;
+    }
+  }
+}
