@@ -17,6 +17,10 @@
     text-align: justify;
     color: #1a1a1a;
 
+    @include tablet {
+      text-align: left;
+    }
+
     & > b {
       font-weight: 700;
     }
