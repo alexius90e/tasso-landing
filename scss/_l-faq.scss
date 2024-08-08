@@ -1,0 +1,9 @@
+.faq {
+  padding: 80px 0;
+  background: url(../assets/faq-bg.svg) top center repeat;
+  background-color: #e5e4e0;
+
+  @include tablet {
+    padding: 40px 0;
+  }
+}
