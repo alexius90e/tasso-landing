@@ -14,6 +14,7 @@
 
     @include tablet {
       flex-direction: column;
+      align-items: flex-start;
     }
   }
 
@@ -90,6 +91,7 @@
       display: flex;
       align-items: flex-end;
       gap: 11px;
+      width: 100%;
       margin: 0 0 20px;
 
       @include mobile {
@@ -97,9 +99,9 @@
       }
 
       &-label {
+        flex: 1 1 auto;
         display: flex;
         flex-direction: column;
-        flex: 1 1 auto;
 
         &-text {
           font-weight: 600;
@@ -111,9 +113,12 @@
 
       &-input {
         display: inline-block;
+        width: 100%;
         padding: 11px 12px 10px;
+        box-sizing: border-box;
         font-weight: 600;
         font-size: 16px;
+        
         line-height: 22px;
         color: $white;
         border: none;
@@ -132,6 +137,17 @@
         border: 1px solid $white;
         border-radius: 4px;
         background-color: $black;
+        transition: all ease-in-out 0.1s;
+        cursor: pointer;
+
+        &:hover {
+          color: $black;
+          background-color: $white;
+        }
+  
+        &:active {
+          transform: scale(0.96);
+        }
       }
     }
 

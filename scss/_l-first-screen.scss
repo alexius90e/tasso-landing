@@ -1,7 +1,52 @@
 .first-screen {
-    padding: 70px 0 100px;
+  padding: 70px 0 100px;
+
+  @include tablet {
+    padding: 13px 0 60px;
+  }
+
+  & .container {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    gap: 103px;
+
+    @include desktop {
+      gap: 40px;
+    }
+
+    @include laptop {
+      gap: 40px 24px;
+      flex-direction: column;
+    }
 
     @include tablet {
-      padding: 13px 0 60px;
     }
+  }
+
+  &__gallery {
+    position: sticky;
+    top: 10px;
+    flex: 0 0 492px;
+    height: fit-content;
+
+    @include laptop {
+      
+      position: static;
+      flex: 0 1 auto;
+      display: flex;
+      justify-content: center;
+    }
+
+    @include tablet {
+    }
+  }
+
+  &__info {
+    flex: 1 1 auto;
+
+    @include tablet {
+      flex: 0 1 auto;
+    }
+  }
 }

@@ -6,6 +6,8 @@
     <title>TASSO+</title>
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+    <script src="./js/swiper-bundle.min.js" defer></script>
     <script type="module" src="./js/index.js" defer></script>
   </head>
 
@@ -25,7 +27,71 @@
     <main class="main">
       <section class="first-screen">
         <div class="container">
-          <div class="first-screen__slider"></div>
+          <div class="first-screen__gallery">
+            <div class="gallery">
+              <div class="gallery__thumbs">
+                <div class="swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img src="./assets/slide-1.jpg" alt="slide" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./assets/slide-2.jpg" alt="slide" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./assets/slide-3.jpg" alt="slide" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./assets/slide-4.jpg" alt="slide" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./assets/slide-5.jpg" alt="slide" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./assets/slide-6.jpg" alt="slide" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./assets/slide-7.jpg" alt="slide" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="gallery__slider">
+                <div class="swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img src="./assets/slide-2.jpg" alt="slide" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./assets/slide-2.jpg" alt="slide" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./assets/slide-3.jpg" alt="slide" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./assets/slide-4.jpg" alt="slide" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./assets/slide-5.jpg" alt="slide" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./assets/slide-6.jpg" alt="slide" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./assets/slide-7.jpg" alt="slide" />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="gallery__slider-controls">
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-pagination"></div>
+                  <div class="swiper-button-next"></div>
+                </div>
+              </div>
+            </div>
+          </div>
 
           <div class="first-screen__info">
             <div class="discover-path">
@@ -239,7 +305,7 @@
               <span class="footer__subscribtion-form-label-text">Enter your emai:</span>
               <input class="footer__subscribtion-form-input" type="email" required />
             </label>
-            
+
             <button class="footer__subscribtion-form-button">Subscribe</button>
           </form>
           <div class="footer__subscribtion-text">

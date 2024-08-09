@@ -60,7 +60,12 @@ img {
   color: $green;
   background: url(../assets/leaf.svg) left top 6px no-repeat;
 
+  @include laptop {
+    text-align: left;
+  }
+
   @include tablet {
     padding-left: 34px;
+    
   }
 }
