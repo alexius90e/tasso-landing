@@ -707,6 +707,15 @@ img {
      object-fit: cover;
   aspect-ratio: 1/1;
 }
+.gallery__slider .swiper-slide iframe {
+  display: block;
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  aspect-ratio: 1/1;
+}
 .gallery__slider .swiper-button-next, .gallery__slider .swiper-button-prev {
   position: static;
   flex: 0 0 auto;
