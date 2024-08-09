@@ -47,6 +47,22 @@
       @include tablet {
         width: 70px;
       }
+
+      @include tablet {
+        width: 48px;
+      }
+    }
+  }
+
+  &__tasso {
+    &-image {
+      display: block;
+      max-width: 100%;
+      height: auto;
+
+      @include mobile {
+        width: 80px;
+      }
     }
   }
 }
