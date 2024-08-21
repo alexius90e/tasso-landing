@@ -55,7 +55,7 @@ img {
   line-height: 100%;
   text-align: justify;
   color: #146464;
-  background: url(../assets/leaf.svg) left top 6px no-repeat;
+  background: url(../assets/leaf2.png) left top 6px no-repeat;
 }
 @media (max-width: 992px) {
   .h2 {
