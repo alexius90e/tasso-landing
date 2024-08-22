@@ -58,7 +58,8 @@ img {
   line-height: 100%;
   text-align: justify;
   color: $green;
-  background: url(../assets/leaf2.png) left top 6px no-repeat;
+  background: url(../assets/leaf.svg) left top 3px no-repeat;
+  background-size: 20px;
 
   @include laptop {
     text-align: left;
